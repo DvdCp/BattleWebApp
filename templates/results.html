@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+   {% if results|length > 0 %}
+      {% for result in results %}
+         <p> CREATION_DATE = [ {{result.creation_date}} ]<br>BATTLE_ID= {{result.id}}<br>BATTLE_LOG = {{result.battle_events}}</p>
+      {%endfor%}
+   {%else%}
+      <p> Nessuna battaglia registrata</p>
+   {%endif%}
+</body>
+
+</html>
+
