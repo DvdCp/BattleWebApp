@@ -8,7 +8,7 @@ import Esercizio5.utils.DatabaseHelper as DBHelper
 exposedApi = Api(app)
 
 # Adding resources to API
-exposedApi.add_resource(Arena, "/Arena")
+exposedApi.add_resource(Arena, "/")
 
 if __name__ == "__main__":
     DBHelper.createDb()
