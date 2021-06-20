@@ -1,6 +1,6 @@
 import json
-from Esercizio5.challangers.Hero import Hero
-from Esercizio5.challangers.Monster import Monster
+from flaskr.challangers.Hero import Hero
+from flaskr.challangers.Monster import Monster
 
 
 class LobbyParser:
