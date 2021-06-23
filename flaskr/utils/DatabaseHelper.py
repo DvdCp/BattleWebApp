@@ -20,11 +20,11 @@ def createDb():
 class Battle(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     battle_events = db.Column(db.String, nullable=False)
-    creation_date = db.Column(db.DateTime, nullable=False)
+    creation_date = db.Column(db.String, nullable=False)
 
     def insertBattle(battleEvents: str) -> None:
-        creation_date = datetime.datetime.now()
-        battle = Battle(battle_events=battleEvents, creation_date=creation_date)
+        creation_date = str(datetime.datetime.now())
+        battle = Battle(battle_events=battleEvents, creation_date=creation_date[:-7])
         db.session.add(battle)
         db.session.commit()
 
