@@ -1,0 +1,18 @@
+@font-face {
+    src: url('../static/fonts/HU-The-Game.ttf');
+    font-family: TheGame;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 100px;
+    font-family: TheGame;
+}
+
+.mainBackground {
+    background: rgba(153, 27, 27, 0.9);
+}
+
+.arena {
+    text-align: center;
+}
