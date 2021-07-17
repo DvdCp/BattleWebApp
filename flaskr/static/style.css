@@ -7,6 +7,7 @@
     text-align: center;
     font-size: 100px;
     font-family: TheGame;
+    margin: 50px;
 }
 
 .mainBackground {
@@ -14,5 +15,16 @@
 }
 
 .arena {
+    text-align: center;
+    margin: 30px;
+}
+
+.homepageLinkElement{
+    text-align: center;
+    font-family: TheGame;
+    font-size: 50px;
+}
+
+.centered{
     text-align: center;
 }
