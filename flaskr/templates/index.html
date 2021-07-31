@@ -2,16 +2,19 @@
 <html lang="en">
     <head>
         <link rel="shortcut icon" href="../static/res/arena .png" type="image/x-icon"/>
-        <link rel="stylesheet" href="static/style.css">
+        <!--<link rel="stylesheet" href="static/style.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
     <body class="mainBackground">
-        <p class="mainTitle" >WELCOME TO THE ARENA !!!</p>
+        <p class="mainTitle">WELCOME TO THE ARENA !</p>
         <div class="arena">
-            <img src="../static/res/swords-emblem.png" width="300" height="300" title="Let's Figth !">
+            <a href = "{{ url_for('create_lobby')}}">
+                <img class="centralLogo" src="../static/res/swords-emblem.png" title="Let's Figth !">
+            </a>
         </div>
         <div class="centered">
-            <a class="homepageLinkElement">Instruction</p>
-            <a class="homepageLinkElement">About</p>
+            <p><a href = "{{ url_for('goToInstruction')}}" class="homepageLinkElement">Instruction</a></p>
+            <p><a href = "{{ url_for('goToAbout')}}" class="homepageLinkElement">About</a></p>
         </div>
         
         

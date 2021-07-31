@@ -1,3 +1,4 @@
+from os import stat
 from flaskr.challangers.Challenger import Challenger
 from flaskr.challangers.Hero import Hero
 from flaskr.challangers.Monster import Monster
@@ -13,8 +14,7 @@ import flaskr.utils.DatabaseHelper as DBHelper
 class Arena(Resource):
 
     print("-----> INIZIALIZZAZIONE DELL'ARENA")
-    # battleLogger = BattleLogger()
-
+    
     def get(self):
         return make_response(render_template("index.html").encode())
 
@@ -36,6 +36,16 @@ class Arena(Resource):
         results = DBHelper.Battle.query.all()
 
         return make_response(render_template('results.html', results=results)), 200
+    
+    @staticmethod
+    @app.route("/Arena/about")
+    def goToAbout():
+        return make_response(render_template('about.html')), 200
+
+    @staticmethod
+    @app.route("/Arena/instruction")
+    def goToInstruction():
+        return make_response(render_template('instruction.html')), 200
 
     @staticmethod
     @app.route("/Arena/createLobby")
