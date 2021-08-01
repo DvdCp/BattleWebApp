@@ -29,7 +29,7 @@ body {
 
 .challengersLobby {
     height: auto;
-    width: 40%;    
+    width: 90vh;    
     margin: 10px;
 }
 
@@ -166,6 +166,23 @@ body {
     transform: scale(1.01); 
     cursor: pointer;
 }
+
+/*custom scrollbar*/
+/* width */
+.scrollable::-webkit-scrollbar {
+    width: 10px;
+  }
+     
+  /* Handle */
+  .scrollable::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  } 
 
 /*higligth*/
 .hl {
