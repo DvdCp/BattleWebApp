@@ -37,7 +37,7 @@ body {
     border-radius: 15px;
     margin: 0.1in;
     width: 95%;
-    height: 0.5in;
+    height: 10vh;
     border: 4px solid black;
 }
 
@@ -48,9 +48,7 @@ body {
     height: 0.5in;
     background: rgba(153, 27, 27, 0.9);
     align-self: center;
-    border: 3px solid rgba(153, 27, 27, 0.9);
-    
-    
+    border: 3px solid rgba(153, 27, 27, 0.9);   
 }
 
 .roundedCorners {
@@ -80,7 +78,17 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: TheGame;
-    margin: auto;
+    margin: 0.5vh;
+}
+
+.challengerStats {
+    text-align: center;
+    font-size: 3vh;
+    font-family: TheGame;
+    margin: 2vh;
+    width: fit-content;
+    height: fit-content;
+    display: inline;
 }
 
 .mainBackground {
@@ -151,6 +159,12 @@ body {
 
 .roundedButton:hover {
   border: 4px solid black;
+  cursor: pointer;
+}
+
+.newChallenger:hover {
+    transform: scale(1.01); 
+    cursor: pointer;
 }
 
 /*higligth*/
