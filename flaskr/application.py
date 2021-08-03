@@ -5,7 +5,7 @@ import flaskr.utils.DatabaseHelper as DBHelper
 
 exposedApi = Api(app)
 # Adding resources to API
-exposedApi.add_resource(Arena, "/")
+exposedApi.add_resource(Arena, "/home")
 
 if __name__ == "__main__":
     DBHelper.createDb()

@@ -51,6 +51,16 @@ body {
     border: 3px solid rgba(153, 27, 27, 0.9);   
 }
 
+.createChallengerPanel {
+    position: relative;
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    border-radius: 15px;
+    background: rgba(10, 27, 27, 1);
+    z-index: 1;
+}
+
 .roundedCorners {
     border-radius: 25px;
     border: 2px;
@@ -146,7 +156,10 @@ body {
 
 .absolutePos {
     position: absolute;
-    
+}
+
+.hidden {
+    display: none;
 }
 
 /* Hover animation */
