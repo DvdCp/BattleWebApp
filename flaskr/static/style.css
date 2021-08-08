@@ -5,6 +5,7 @@
 
 body {
     min-height: 95vh;
+    position: relative;
 }
 
 .mainTitle {
@@ -52,13 +53,71 @@ body {
 }
 
 .createChallengerPanel {
-    position: relative;
+    position: absolute;
     width: 60%;
     height: 70vh;
-    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 15px;
     background: rgba(10, 27, 27, 1);
     z-index: 1;
+    overflow: hidden;
+}
+
+.leftSubpanel {
+    position: absolute;
+    width: 40vh;
+    height: 55vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    float: left;
+    z-index: 1;
+}
+.rightSubpanel {
+    width: 60vh;
+    height: 55vh;
+    margin-top: 2%;
+    margin-right: 2%;
+    background-color: purple;
+    z-index: 1;
+    float: right;
+}
+
+.css-input {
+    padding: 4px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: white;
+    text-align: left;
+}
+.css-input:focus {
+    outline:none;
+}
+
+.newMonsterStatsButton {
+    border-radius: 25px;
+    border: 5%;
+    width: 40vh;
+    height: 15vh;
+    background-color: rgba(105, 18, 18, 1);  
+    margin: 1vh;
+}
+
+.whiteNormalText {
+    text-align: center;
+    font-size: 40px;
+    font-family: TheGame;
+    margin: 0.5vh;
+    color: white;
+}
+
+.smallWhiteNormalText {
+    text-align: center;
+    font-size: 30px;
+    font-family: TheGame;
+    margin: 0.5vh;
+    color: white;
 }
 
 .roundedCorners {
@@ -92,6 +151,16 @@ body {
 }
 
 .challengerStats {
+    text-align: center;
+    font-size: 3vh;
+    font-family: TheGame;
+    margin: 2vh;
+    width: fit-content;
+    height: fit-content;
+    display: inline;
+}
+
+.challengerStatsButton {
     text-align: center;
     font-size: 3vh;
     font-family: TheGame;
